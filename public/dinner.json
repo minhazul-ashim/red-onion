@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Salmon with Grape and Lentil Salad",
+        "shortDesc": "How we dream about our future",
+        "price": 6.99,
+        "detail": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus minus sint earum praesentium. Aperiam libero numquam delectus, voluptate voluptatibus, nostrum, beatae quos aspernatur suscipit laborum iure magnam alias pariatur! Ab.",
+        "img": "https://i.ibb.co/q7pZnbz/dinner1.png"
+    },
+    {
+        "name": "Lemony Salmon Piccata",
+        "shortDesc": "How we dream about our future",
+        "price": 9.99,
+        "detail": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus minus sint earum praesentium. Aperiam libero numquam delectus, voluptate voluptatibus, nostrum, beatae quos aspernatur suscipit laborum iure magnam alias pariatur! Ab.",
+        "img": "https://i.ibb.co/Wx2f3Yj/dinner2.png"
+    },
+    {
+        "name": "Pork Tenderloin with Quinoa Pilaf",
+        "shortDesc": "How we dream about our future",
+        "price": 12.99,
+        "detail": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus minus sint earum praesentium. Aperiam libero numquam delectus, voluptate voluptatibus, nostrum, beatae quos aspernatur suscipit laborum iure magnam alias pariatur! Ab.",
+        "img": "https://i.ibb.co/cCWhNGj/dinner3.png"
+    },
+    {
+        "name": "French Fries with Cheese",
+        "shortDesc": "How we dream about our future",
+        "price": 8.99,
+        "detail": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus minus sint earum praesentium. Aperiam libero numquam delectus, voluptate voluptatibus, nostrum, beatae quos aspernatur suscipit laborum iure magnam alias pariatur! Ab.",
+        "img": "https://i.ibb.co/G9RWtYp/dinner4.png"
+    },
+    {
+        "name": "Garlic Butter Baked Salmon",
+        "shortDesc": "How we dream about our future",
+        "price": 8.99,
+        "detail": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus minus sint earum praesentium. Aperiam libero numquam delectus, voluptate voluptatibus, nostrum, beatae quos aspernatur suscipit laborum iure magnam alias pariatur! Ab.",
+        "img": "https://i.ibb.co/vXSZLVm/dinner5.png"
+    },
+    {
+        "name": "Baked Chicken",
+        "shortDesc": "How we dream about our future",
+        "price": 11.99,
+        "detail": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus minus sint earum praesentium. Aperiam libero numquam delectus, voluptate voluptatibus, nostrum, beatae quos aspernatur suscipit laborum iure magnam alias pariatur! Ab.",
+        "img": "https://i.ibb.co/ZWRh5Hr/dinner6.png"
+    }
+]

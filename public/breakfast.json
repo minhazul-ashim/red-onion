@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Bagel and Cream Cheese",
+        "shortDesc": "How we dream about our future",
+        "price": 6.99,
+        "detail": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus minus sint earum praesentium. Aperiam libero numquam delectus, voluptate voluptatibus, nostrum, beatae quos aspernatur suscipit laborum iure magnam alias pariatur! Ab.",
+        "img": "https://i.ibb.co/TWSM5Ry/breakfast1.png"
+    },
+    {
+        "name": "Breakfast Sandwich",
+        "shortDesc": "How we dream about our future",
+        "price": 9.99,
+        "detail": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus minus sint earum praesentium. Aperiam libero numquam delectus, voluptate voluptatibus, nostrum, beatae quos aspernatur suscipit laborum iure magnam alias pariatur! Ab.",
+        "img": "https://i.ibb.co/SmbH6y8/breakfast2.png"
+    },
+    {
+        "name": "Baked Chicken",
+        "shortDesc": "How we dream about our future",
+        "price": 10.99,
+        "detail": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus minus sint earum praesentium. Aperiam libero numquam delectus, voluptate voluptatibus, nostrum, beatae quos aspernatur suscipit laborum iure magnam alias pariatur! Ab.",
+        "img": "https://i.ibb.co/wMMmLM1/breakfast3.png"
+    },
+    {
+        "name": "Eggs Benedict",
+        "shortDesc": "How we dream about our future",
+        "price": 8.99,
+        "detail": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus minus sint earum praesentium. Aperiam libero numquam delectus, voluptate voluptatibus, nostrum, beatae quos aspernatur suscipit laborum iure magnam alias pariatur! Ab.",
+        "img": "https://i.ibb.co/L0cCFhb/breakfast4.png"
+    },
+    {
+        "name": "Toast Crossoiant Friend Egg",
+        "shortDesc": "How we dream about our future",
+        "price": 19.99,
+        "detail": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus minus sint earum praesentium. Aperiam libero numquam delectus, voluptate voluptatibus, nostrum, beatae quos aspernatur suscipit laborum iure magnam alias pariatur! Ab.",
+        "img": "https://i.ibb.co/6y7Kyk0/breakfast5.png"
+    },
+    {
+        "name": "Egg Toast Brunch",
+        "shortDesc": "How we dream about our future",
+        "price": 7.99,
+        "detail": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus minus sint earum praesentium. Aperiam libero numquam delectus, voluptate voluptatibus, nostrum, beatae quos aspernatur suscipit laborum iure magnam alias pariatur! Ab.",
+        "img": "https://i.ibb.co/FKH92tK/breakfast6.png"
+    }
+]
