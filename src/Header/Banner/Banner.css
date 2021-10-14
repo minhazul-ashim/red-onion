@@ -1,0 +1,12 @@
+.banner-img {
+
+    background: url(../../images/bannerbackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.banner-overlay {
+
+    background: rgba(255, 255, 255, 0.384);
+}

@@ -11,7 +11,7 @@ const Navigation = () => {
     return (
         <Navbar bg="light" expand="lg">
             <Container>
-                <Navbar.Brand>
+                <Navbar.Brand className='d-none d-sm-block'>
                     <img
                         src={logo}
                         height="40"

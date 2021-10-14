@@ -1,11 +1,16 @@
 import './App.css';
 import Header from './Header/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <Header></Header>
+      <BrowserRouter>
+        <Header></Header>
+
+      </BrowserRouter>
+
     </div>
   );
 }
