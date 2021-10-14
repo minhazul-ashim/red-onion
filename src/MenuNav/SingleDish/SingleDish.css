@@ -1,0 +1,11 @@
+.dish-box {
+
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.dish-box:hover {
+
+    box-shadow: 5px 5px 15px #999;
+    
+}
