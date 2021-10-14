@@ -6,7 +6,6 @@ import SingleDish from '../../MenuNav/SingleDish/SingleDish'
 const Breakfast = () => {
 
     const dishes = useDishes('breakfast');
-    console.log(dishes)
 
     if (!dishes) {
         return <div></div>

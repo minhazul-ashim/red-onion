@@ -6,6 +6,7 @@ import MenuNav from './MenuNav/MenuNav';
 import Breakfast from '../src/MenuNav/Breakfast/Breakfast'
 import Lunch from '../src/MenuNav/Lunch/Lunch'
 import Dinner from '../src/MenuNav/Dinner/Dinner'
+import DishDetail from './MenuNav/DishDetail/DishDetail';
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
           </Route>
           <Route path='/dinner'>
             <Dinner></Dinner>
+          </Route>
+          <Route path='/dish/:dishId'>
+            <DishDetail></DishDetail>
           </Route>
         </Switch>
       </BrowserRouter>

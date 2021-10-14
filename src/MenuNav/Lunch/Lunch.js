@@ -5,7 +5,6 @@ import SingleDish from '../SingleDish/SingleDish';
 
 const Lunch = () => {
     const dishes = useDishes('lunch');
-    console.log(dishes)
 
     if (!dishes) {
         return <div></div>
