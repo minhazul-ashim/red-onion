@@ -7,7 +7,7 @@ const MenuNav = () => {
 
     return (
         <Container className='my-3'>
-            <Nav variant="tabs" defaultActiveKey="/home" className='w-100 d-flex justify-content-center'>
+            <Nav variant="tabs" className='w-100 d-flex justify-content-center'>
                 <Nav.Item>
                     <Nav.Link as={NavLink} to='/breakfast' show>
                         Breakfast</Nav.Link>

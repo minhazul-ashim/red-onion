@@ -1,22 +1,33 @@
 import './App.css';
-import Header from './Header/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import MenuNav from './MenuNav/MenuNav';
-import Breakfast from '../src/MenuNav/Breakfast/Breakfast'
-import Lunch from '../src/MenuNav/Lunch/Lunch'
-import Dinner from '../src/MenuNav/Dinner/Dinner'
+import Navigation from './Header/Navigation/Navigation';
+import Home from './Home/Home';
+import Footer from '../src/Footer/Footer'
 import DishDetail from './MenuNav/DishDetail/DishDetail';
-import Motivation from './Motivation/Motivation';
-import Footer from './Footer/Footer';
+import Breakfast from './MenuNav/Breakfast/Breakfast';
+import Lunch from './MenuNav/Lunch/Lunch';
+import Dinner from './MenuNav/Dinner/Dinner';
+import Login from './Login/Login';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Header></Header>
-        <MenuNav></MenuNav>
+        <Navigation></Navigation>
         <Switch>
+          <Route exact path='/'>
+            <Home></Home>
+          </Route>
+          <Route path='/home'>
+            <Home></Home>
+          </Route>
+          <Route path='/login'>
+            <Login></Login>
+          </Route>
+          <Route path='/dish/:dishId'>
+            <DishDetail></DishDetail>
+          </Route>
           <Route path='/breakfast'>
             <Breakfast></Breakfast>
           </Route>
@@ -26,11 +37,7 @@ function App() {
           <Route path='/dinner'>
             <Dinner></Dinner>
           </Route>
-          <Route path='/dish/:dishId'>
-            <DishDetail></DishDetail>
-          </Route>
         </Switch>
-        <Motivation></Motivation>
         <Footer></Footer>
       </BrowserRouter>
     </div>
