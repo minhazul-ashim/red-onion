@@ -7,6 +7,7 @@ import Breakfast from '../src/MenuNav/Breakfast/Breakfast'
 import Lunch from '../src/MenuNav/Lunch/Lunch'
 import Dinner from '../src/MenuNav/Dinner/Dinner'
 import DishDetail from './MenuNav/DishDetail/DishDetail';
+import Motivation from './Motivation/Motivation';
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
             <DishDetail></DishDetail>
           </Route>
         </Switch>
+        <Motivation></Motivation>
+
       </BrowserRouter>
     </div>
   );
