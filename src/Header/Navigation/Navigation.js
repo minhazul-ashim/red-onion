@@ -3,13 +3,16 @@ import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import logo from '../../images/logo2.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
-import { useHistory } from 'react-router';
 import { Link } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 
 const Navigation = () => {
 
     const cartIcon = <FontAwesomeIcon icon={faShoppingCart} />
 
+    const { user, logOut } = useAuth();
+
+    console.log(user);
 
     return (
         <Navbar bg="light" expand="sm">
@@ -27,10 +30,20 @@ const Navigation = () => {
                     <Nav className="ms-auto d-flex align-items-center">
 
                         <Nav.Link href="#home" className='mx-2'>{cartIcon}</Nav.Link>
-                        <Nav.Link as={Link} to='/login' className='mx-2'>Login</Nav.Link>
-                        <Nav.Link href="#link" className='mx-2'>
-                            <Button variant='outline-primary'>Sign up</Button>
-                        </Nav.Link>
+                        {
+                            !user ?
+                                <div className='d-flex align-items-center'>
+                                    <Nav.Link href="#link" className='mx-2'>
+                                        <Button variant='outline-primary'>Sign up</Button>
+                                    </Nav.Link>
+                                    <Nav.Link as={Link} to='/login' className='mx-2'>Login</Nav.Link>
+                                </div>
+                                :
+                                <div className="">
+                                    <Button className='mx-2' onClick={logOut}>Log out</Button>
+                                    <img width='40px' height='40px' className='rounded-circle' src={user.photoURL} alt="" />
+                                </div>
+                        }
                     </Nav>
                 </Navbar.Collapse>
             </Container>

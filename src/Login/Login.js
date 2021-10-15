@@ -3,9 +3,12 @@ import { Container, Button } from 'react-bootstrap';
 import './Login.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle, faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons'
+import useAuth from '../hooks/useAuth';
 
 
 const Login = () => {
+
+    const { googleSignIn } = useAuth();
 
     return (
         <div className="login p-5">
@@ -19,7 +22,7 @@ const Login = () => {
                     <input type="submit" value="Submit" className='btn btn-success' />
                 </form>
                 <div className="d-flex justify-content-center align-items-center">
-                    <Button className='mx-1' variant='danger'>
+                    <Button onClick={googleSignIn} className='mx-1' variant='danger'>
                         <FontAwesomeIcon icon={faGoogle}></FontAwesomeIcon>
                     </Button>
                     <Button className='mx-1' variant='primary'>

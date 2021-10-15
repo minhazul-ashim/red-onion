@@ -9,37 +9,41 @@ import Breakfast from './MenuNav/Breakfast/Breakfast';
 import Lunch from './MenuNav/Lunch/Lunch';
 import Dinner from './MenuNav/Dinner/Dinner';
 import Login from './Login/Login';
+import AuthProvider from './contexts/AuthProvider';
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Navigation></Navigation>
-        <Switch>
-          <Route exact path='/'>
-            <Home></Home>
-          </Route>
-          <Route path='/home'>
-            <Home></Home>
-          </Route>
-          <Route path='/login'>
-            <Login></Login>
-          </Route>
-          <Route path='/dish/:dishId'>
-            <DishDetail></DishDetail>
-          </Route>
-          <Route path='/breakfast'>
-            <Breakfast></Breakfast>
-          </Route>
-          <Route path='/lunch'>
-            <Lunch></Lunch>
-          </Route>
-          <Route path='/dinner'>
-            <Dinner></Dinner>
-          </Route>
-        </Switch>
-        <Footer></Footer>
-      </BrowserRouter>
+
+      <AuthProvider>
+        <BrowserRouter>
+          <Navigation></Navigation>
+          <Switch>
+            <Route exact path='/'>
+              <Home></Home>
+            </Route>
+            <Route path='/home'>
+              <Home></Home>
+            </Route>
+            <Route path='/login'>
+              <Login></Login>
+            </Route>
+            <Route path='/dish/:dishId'>
+              <DishDetail></DishDetail>
+            </Route>
+            <Route path='/breakfast'>
+              <Breakfast></Breakfast>
+            </Route>
+            <Route path='/lunch'>
+              <Lunch></Lunch>
+            </Route>
+            <Route path='/dinner'>
+              <Dinner></Dinner>
+            </Route>
+          </Switch>
+          <Footer></Footer>
+        </BrowserRouter>
+      </AuthProvider>
     </div>
   );
 }
