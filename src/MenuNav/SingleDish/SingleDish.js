@@ -13,7 +13,7 @@ const SingleDish = ({ dish }) => {
     }
 
     return (
-        <Col className='p-3 d-flex align-items-center dish-box'>
+        <Col className='p-3 d-flex flex-column dish-box'>
             <div className="dish-img-div w-50 mx-auto text-center">
                 <img className='img-fluid' src={img} alt="" />
             </div>
