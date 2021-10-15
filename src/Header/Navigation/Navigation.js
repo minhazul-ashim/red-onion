@@ -12,8 +12,6 @@ const Navigation = () => {
 
     const { user, logOut } = useAuth();
 
-    console.log(user);
-
     return (
         <Navbar bg="light" expand="sm">
             <Container>

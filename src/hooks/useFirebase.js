@@ -1,4 +1,4 @@
-import { GoogleAuthProvider, getAuth, signInWithPopup, onAuthStateChanged, signOut } from "firebase/auth";
+import { GoogleAuthProvider, getAuth, signInWithPopup, onAuthStateChanged, signOut, GithubAuthProvider, FacebookAuthProvider } from "firebase/auth";
 import { useEffect } from "react";
 import { useState } from "react";
 import initializeAuth from '../../src/Firebase/firebase.init'
@@ -12,6 +12,8 @@ const useFirebase = () => {
     const [error, setError] = useState('');
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
+    const gitHubProvider = new GithubAuthProvider();
+    const facebookProvider = new FacebookAuthProvider();
 
     const googleSignIn = () => {
 
@@ -24,11 +26,35 @@ const useFirebase = () => {
             })
     }
 
+    const githubSignIn = () => {
+
+        signInWithPopup(auth, gitHubProvider)
+            .then(result => {
+                console.log('signed in')
+            })
+            .catch(error => {
+                console.log(error.message)
+                setError(error.message)
+            })
+    }
+
+    const facebookSignIn = () => {
+
+        signInWithPopup(auth, facebookProvider)
+            .then(result => {
+                console.log('signed in')
+            })
+            .catch(error => {
+                console.log(error.message)
+                setError(error.message)
+            })
+    }
+
     const logOut = () => {
 
         signOut(auth)
             .then(() => {
-                console.log('signed out')
+
             })
     }
 
@@ -49,6 +75,8 @@ const useFirebase = () => {
         user,
         error,
         googleSignIn,
+        githubSignIn,
+        facebookSignIn,
         logOut
     }
 };

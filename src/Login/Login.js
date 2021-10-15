@@ -8,7 +8,7 @@ import useAuth from '../hooks/useAuth';
 
 const Login = () => {
 
-    const { googleSignIn } = useAuth();
+    const { googleSignIn, githubSignIn, facebookSignIn } = useAuth();
 
     return (
         <div className="login p-5">
@@ -25,10 +25,10 @@ const Login = () => {
                     <Button onClick={googleSignIn} className='mx-1' variant='danger'>
                         <FontAwesomeIcon icon={faGoogle}></FontAwesomeIcon>
                     </Button>
-                    <Button className='mx-1' variant='primary'>
+                    <Button onClick={facebookSignIn} className='mx-1' variant='primary'>
                         <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
                     </Button>
-                    <Button className='mx-1' variant='secondary'>
+                    <Button onClick={githubSignIn} className='mx-1' variant='secondary'>
                         <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
                     </Button>
                 </div>
