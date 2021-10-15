@@ -4,3 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.footer {
+
+    background: #222;
+    color: white;
+}

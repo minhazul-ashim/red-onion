@@ -8,6 +8,7 @@ import Lunch from '../src/MenuNav/Lunch/Lunch'
 import Dinner from '../src/MenuNav/Dinner/Dinner'
 import DishDetail from './MenuNav/DishDetail/DishDetail';
 import Motivation from './Motivation/Motivation';
+import Footer from './Footer/Footer';
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
           </Route>
         </Switch>
         <Motivation></Motivation>
-
+        <Footer></Footer>
       </BrowserRouter>
     </div>
   );
