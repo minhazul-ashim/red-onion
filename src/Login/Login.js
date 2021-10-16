@@ -22,7 +22,7 @@ const Login = () => {
                 <form className='mx-auto w-75'>
                     <input className='form-control' type="email" placeholder='Enter your email' />
                     <br />
-                    <input className='form-control' type="email" placeholder='Enter your password' />
+                    <input className='form-control' type="password" placeholder='Enter your password' />
                     <br />
                     <input type="submit" value="Submit" className='btn btn-success' />
                 </form>
