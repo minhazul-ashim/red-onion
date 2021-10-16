@@ -32,7 +32,7 @@ const Navigation = () => {
                             !user ?
                                 <div className='d-flex align-items-center'>
                                     <Nav.Link href="#link" className='mx-2'>
-                                        <Button variant='outline-primary'>Sign up</Button>
+                                        <Button as={Link} to='/signup' variant='outline-primary'>Sign up</Button>
                                     </Nav.Link>
                                     <Nav.Link as={Link} to='/login' className='mx-2'>Login</Nav.Link>
                                 </div>

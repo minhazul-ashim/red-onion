@@ -1,4 +1,4 @@
-import { GoogleAuthProvider, getAuth, signInWithPopup, onAuthStateChanged, signOut, GithubAuthProvider, FacebookAuthProvider } from "firebase/auth";
+import { GoogleAuthProvider, getAuth, signInWithPopup, onAuthStateChanged, signOut, GithubAuthProvider, FacebookAuthProvider, createUserWithEmailAndPassword } from "firebase/auth";
 import { useEffect } from "react";
 import { useState } from "react";
 import initializeAuth from '../../src/Firebase/firebase.init'
@@ -50,6 +50,17 @@ const useFirebase = () => {
             })
     }
 
+    const createUser = (email, password) => {
+
+        createUserWithEmailAndPassword(auth, email, password)
+            .then(result => {
+                console.log(result.user)
+            })
+            .catch(error => {
+                setError(error.message)
+            })
+    }
+
     const logOut = () => {
 
         signOut(auth)
@@ -77,6 +88,7 @@ const useFirebase = () => {
         googleSignIn,
         githubSignIn,
         facebookSignIn,
+        createUser,
         logOut
     }
 };

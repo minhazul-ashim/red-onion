@@ -4,6 +4,7 @@ import './Login.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle, faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons'
 import useAuth from '../hooks/useAuth';
+import { Link } from 'react-router-dom';
 
 
 const Login = () => {
@@ -17,7 +18,7 @@ const Login = () => {
                 <form className='mx-auto w-75'>
                     <input className='form-control' type="email" placeholder='Enter your email' />
                     <br />
-                    <input className='form-control' type="email" placeholder='Enter your email' />
+                    <input className='form-control' type="email" placeholder='Enter your password' />
                     <br />
                     <input type="submit" value="Submit" className='btn btn-success' />
                 </form>
@@ -32,6 +33,7 @@ const Login = () => {
                         <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
                     </Button>
                 </div>
+                <p className='text-center mt-3'>New here? <Link to='/signup'>Register</Link> </p>
             </Container>
         </div>
     );

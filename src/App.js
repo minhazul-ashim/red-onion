@@ -10,6 +10,7 @@ import Lunch from './MenuNav/Lunch/Lunch';
 import Dinner from './MenuNav/Dinner/Dinner';
 import Login from './Login/Login';
 import AuthProvider from './contexts/AuthProvider';
+import SignUp from './SignUp/SignUp';
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
             </Route>
             <Route path='/login'>
               <Login></Login>
+            </Route>
+            <Route path='/signup'>
+              <SignUp></SignUp>
             </Route>
             <Route path='/dish/:dishId'>
               <DishDetail></DishDetail>
