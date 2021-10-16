@@ -1,13 +1,7 @@
-import React, { useState } from 'react';
-import useFindDish from '../../hooks/useFindDish';
-import { getStoredPlate } from '../../utililties/localStorage';
+import React from 'react';
+
 
 const CartDetail = () => {
-
-    const plate = getStoredPlate();
-    const [dishes, setDishes] = useState([]);
-
-    
 
     return (
         <div>
