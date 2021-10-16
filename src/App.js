@@ -11,6 +11,7 @@ import Dinner from './MenuNav/Dinner/Dinner';
 import Login from './Login/Login';
 import AuthProvider from './contexts/AuthProvider';
 import SignUp from './SignUp/SignUp';
+import Cart from './Cart/Cart';
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
             </Route>
             <Route path='/home'>
               <Home></Home>
+            </Route>
+            <Route path='/cart'>
+              <Cart></Cart>
             </Route>
             <Route path='/login'>
               <Login></Login>
