@@ -1,26 +1,24 @@
 const getPlate = () => {
 
-    localStorage.getItem('plate')
+    return localStorage.getItem('plate')
 }
 
-const addToPlate = (id) => {
+const addToPlate = (id, qty) => {
 
-    const exists = getPlate();
+    const db = JSON.parse(getPlate());
 
-    let plate = {};
-
-    if (!exists) {
-        plate[id] = 1;
+    if (!db) {
+        let plate = {};
+        plate[id] = qty
+        return updatePlate(plate)
     } else {
-        plate = JSON.parse(exists);
-        if (plate[id]) {
-            const newQty = plate[id] + 1;
-            plate[id] = newQty;
+        if (id in db) {
+            db[id] = db[id] + qty;
         } else {
-            plate[id] = 1;
+            db[id] = qty
         }
     }
-    updatePlate(plate)
+    updatePlate(db)
 }
 
 const updatePlate = (plate) => {

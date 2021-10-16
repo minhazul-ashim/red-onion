@@ -48,7 +48,7 @@ const DishDetail = () => {
                         <br />
                     </div>
 
-                    <Button onClick={() => addToPlate(dishId)} variant='danger'>Add to plate</Button>
+                    <Button onClick={() => addToPlate(dishId, qty)} variant='danger'>Add to plate</Button>
 
                 </div>
                 <div className='dish-img'>
