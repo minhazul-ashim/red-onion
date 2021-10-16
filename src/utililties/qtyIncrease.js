@@ -1,13 +1,14 @@
 
 const qtyIncrease = (prev, add) => {
 
-    if (prev > 0 && add) {
+    if (prev >= 1 && add) {
         return prev + 1;
-    } else if (prev > 0 && !add) {
+    } else if (prev >= 2 && !add) {
         return prev - 1;
     } else {
-        return prev;
+        return 1
     }
 };
 
 export default qtyIncrease;
+

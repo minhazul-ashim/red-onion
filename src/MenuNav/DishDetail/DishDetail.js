@@ -30,6 +30,12 @@ const DishDetail = () => {
         setQty(qtyIncrease(qty, true))
     }
 
+    const handleOrder = () => {
+
+        addToPlate(dishId, qty);
+        setQty(0)
+    }
+
     if (!dish) {
         return <div className="">Waiting</div>
     } else {
@@ -38,7 +44,7 @@ const DishDetail = () => {
                 <div className="dish-info p-5">
                     <h4>{dish.name}</h4>
                     <p className="lead">{dish.detail}</p>
-                    <h3>${dish.price * qty}</h3>
+                    <h3>${(dish.price * qty).toFixed(2)}</h3>
 
                     <div className="my-4">
 
@@ -48,7 +54,7 @@ const DishDetail = () => {
                         <br />
                     </div>
 
-                    <Button onClick={() => addToPlate(dishId, qty)} variant='danger'>Add to plate</Button>
+                    <Button onClick={handleOrder} variant='danger'>Add to plate</Button>
 
                 </div>
                 <div className='dish-img'>
