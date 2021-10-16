@@ -6,6 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import { faMinus } from '@fortawesome/free-solid-svg-icons'
 import qtyIncrease from '../../utililties/qtyIncrease';
+import { addToPlate } from '../../utililties/localStorage'
+
 
 const DishDetail = () => {
 
@@ -46,7 +48,7 @@ const DishDetail = () => {
                         <br />
                     </div>
 
-                    <Button variant='danger'>Add to plate</Button>
+                    <Button onClick={() => addToPlate(dishId)} variant='danger'>Add to plate</Button>
 
                 </div>
                 <div className='dish-img'>

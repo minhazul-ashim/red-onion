@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Button } from 'react-bootstrap';
 import { useHistory } from 'react-router';
-import './SingleDish.css'
+import './SingleDish.css';
 
 const SingleDish = ({ dish }) => {
 
