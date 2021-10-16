@@ -10,7 +10,7 @@ const Banner = () => {
                 <Container>
                     <div className="banner-text p-5 text-center">
                         <h1 className='d-none d-md-block'>Best food waiting for your tummy. Order now.</h1>
-                        <InputGroup className="mt-5 form-container w-50 mx-auto">
+                        <InputGroup className="mt-5 form-container mx-auto">
                             <FormControl
                                 placeholder="Search your food"
                                 aria-label="Recipient's username"

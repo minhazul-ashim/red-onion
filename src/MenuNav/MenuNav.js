@@ -9,7 +9,7 @@ const MenuNav = () => {
         <Container className='my-3'>
             <Nav variant="tabs" className='w-100 d-flex justify-content-center'>
                 <Nav.Item>
-                    <Nav.Link as={NavLink} to='/breakfast' show>
+                    <Nav.Link as={NavLink} to='/breakfast'>
                         Breakfast</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
