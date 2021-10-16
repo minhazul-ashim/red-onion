@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
-import logo from '../../images/logo2.png'
+import logo from '../../images/logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
@@ -13,7 +13,7 @@ const Navigation = () => {
     const { user, logOut } = useAuth();
 
     return (
-        <Navbar bg="light" expand="sm">
+        <Navbar bg="dark" variant='dark' expand="sm">
             <Container>
                 <Navbar.Brand className='d-none d-sm-block'>
                     <img
@@ -39,7 +39,7 @@ const Navigation = () => {
                                 </div>
                                 :
                                 <div className="">
-                                    <Button className='mx-2' onClick={logOut}>Log out</Button>
+                                    <Button variant='danger' className='mx-2' onClick={logOut}>Log out</Button>
                                     <img width='40px' height='40px' className='rounded-circle' src={user.photoURL} alt="" />
                                 </div>
                         }
