@@ -10,3 +10,10 @@
     background: #222;
     color: white;
 }
+
+@media screen and (max-width: 768px){
+
+    html {
+        font-size:70%;
+    }
+}

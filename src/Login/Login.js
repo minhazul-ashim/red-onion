@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle, faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons'
 import useAuth from '../hooks/useAuth';
 import { Link } from 'react-router-dom';
+import logo from '../../src/images/logo2.png'
 
 
 const Login = () => {
@@ -12,7 +13,10 @@ const Login = () => {
     const { googleSignIn, githubSignIn, facebookSignIn } = useAuth();
 
     return (
-        <div className="login p-5">
+        <div className="login p-5 d-flex flex-column align-items-center">
+            <div className="login-page-logo w-25 my-5">
+                <img className='img-fluid' src={logo} alt="" />
+            </div>
             <h2 className='text-center text-primary'>Enter login info</h2>
             <Container className=''>
                 <form className='mx-auto w-75'>
